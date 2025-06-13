@@ -20,15 +20,7 @@ git clone [repository-url]
 cd lion-claw-safaris
 ```
 
-2. Add your images:
-   - Place your images in the `images` directory
-   - Required images:
-     - `hero-bg.jpg` (hero section background)
-     - `alfred.jpg` (about section)
-     - `maasai-mara.jpg` (package card)
-     - `testimonial-1.jpg` (testimonial)
-
-3. Open `index.html` in your browser to view the website
+2. Open `index.html` in your browser to view the website
 
 ## Development
 
