@@ -1,20 +1,43 @@
-// Loading Animation
-window.addEventListener('load', () => {
-    const loader = document.querySelector('.loader-wrapper');
-    loader.style.opacity = '0';
-    setTimeout(() => {
-        loader.style.display = 'none';
-    }, 500);
+// Initialize AOS (Animate On Scroll)
+AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false
 });
 
-// Mobile Menu
+// Loading Animation
+document.addEventListener('DOMContentLoaded', () => {
+    const loader = document.querySelector('.loader-wrapper');
+    if (loader) {
+        setTimeout(() => {
+            loader.classList.add('fade-out');
+        }, 500);
+    }
+});
+
+// Header Scroll Effect
+const header = document.querySelector('.header');
+if (header) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+}
+
+// Mobile Menu Toggle
 const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
-mobileMenuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    mobileMenuBtn.classList.toggle('active');
-});
+if (mobileMenuBtn && navLinks) {
+    mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
+    });
+}
 
 // Close mobile menu when clicking a link
 document.querySelectorAll('.nav-links a').forEach(link => {
@@ -141,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Smooth Scrolling
+// Smooth Scroll for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -177,42 +200,33 @@ scrollToTopBtn.addEventListener('click', () => {
 });
 
 // Form Validation
-const bookingForm = document.getElementById('bookingForm');
-
-bookingForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Basic form validation
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const package = document.getElementById('package').value;
-    const dates = document.getElementById('dates').value;
-
-    if (!name || !email || !phone || !package || !dates) {
-        alert('Please fill in all required fields');
-        return;
-    }
-
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address');
-        return;
-    }
-
-    // Phone validation (basic)
-    const phoneRegex = /^[\d\s+-()]+$/;
-    if (!phoneRegex.test(phone)) {
-        alert('Please enter a valid phone number');
-        return;
-    }
-
-    // If all validation passes, you can submit the form
-    // For now, we'll just show a success message
-    alert('Thank you for your booking request! We will contact you shortly.');
-    bookingForm.reset();
-});
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Basic form validation
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        if (!name || !email || !message) {
+            alert('Please fill in all required fields');
+            return;
+        }
+        
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address');
+            return;
+        }
+        
+        // Here you would typically send the form data to a server
+        alert('Thank you for your message! We will get back to you soon.');
+        contactForm.reset();
+    });
+}
 
 // Intersection Observer for fade-in animations
 const fadeElements = document.querySelectorAll('.fade-in');
@@ -240,31 +254,60 @@ fadeElements.forEach(element => {
     observer.observe(element);
 });
 
-// Contact Form Handling
-document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(contactForm);
-            const formObject = {};
-            formData.forEach((value, key) => {
-                formObject[key] = value;
+// Lazy Loading Images
+document.addEventListener('DOMContentLoaded', () => {
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.classList.add('loaded');
+                    observer.unobserve(img);
+                }
             });
-
-            // Here you would typically send the form data to your server
-            // For now, we'll just log it and show a success message
-            console.log('Form submitted:', formObject);
-            
-            // Show success message
-            alert('Thank you for your message! We will get back to you soon.');
-            
-            // Reset form
-            contactForm.reset();
         });
+
+        lazyImages.forEach(img => imageObserver.observe(img));
+    } else {
+        // Fallback for browsers that don't support IntersectionObserver
+        lazyImages.forEach(img => img.classList.add('loaded'));
     }
+});
+
+// Testimonial Slider
+const testimonials = document.querySelectorAll('.testimonial');
+let currentTestimonial = 0;
+
+function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+        testimonial.style.display = i === index ? 'block' : 'none';
+    });
+}
+
+if (testimonials.length > 1) {
+    setInterval(() => {
+        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+        showTestimonial(currentTestimonial);
+    }, 5000);
+}
+
+// Initialize testimonial display
+if (testimonials.length > 0) {
+    showTestimonial(0);
+}
+
+// Add hover effect to package cards
+const packageCards = document.querySelectorAll('.package-card');
+packageCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-10px)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0)';
+    });
 });
 
 // Add active class to current navigation item
@@ -283,4 +326,22 @@ function setActiveNavItem() {
 }
 
 // Call the function when the page loads
-document.addEventListener('DOMContentLoaded', setActiveNavItem); 
+document.addEventListener('DOMContentLoaded', setActiveNavItem);
+
+// Optimize gallery images
+function optimizeGalleryImages() {
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    galleryItems.forEach(img => {
+        // Add loading="lazy" attribute
+        img.setAttribute('loading', 'lazy');
+        
+        // Store original src in data-src
+        if (!img.dataset.src) {
+            img.dataset.src = img.src;
+            img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"%3E%3Crect width="300" height="200" fill="%23f5f5f5"/%3E%3C/svg%3E';
+        }
+    });
+}
+
+// Call gallery optimization when DOM is loaded
+document.addEventListener('DOMContentLoaded', optimizeGalleryImages); 

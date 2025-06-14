@@ -6,101 +6,165 @@
     <title>About Us - Lion Claw Safaris</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Lion Claw Safaris Logo">
-            <h1>Lion Claw Safaris</h1>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="logo/Screenshot 2025-06-13 164438.png" alt="Lion Claw Safaris Logo">
+                <span>Lion Claw Safaris</span>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About Us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <section class="about-hero">
-            <h2>Our Story</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Founded in 2010, Lion Claw Safaris has been at the forefront of providing exceptional safari experiences in Tanzania. Our journey began with a simple mission: to connect people with the raw beauty of Africa while ensuring sustainable tourism practices.</p>
-                    
-                    <h3>Our Mission</h3>
-                    <p>We are committed to providing authentic safari experiences that respect wildlife and local communities. Our goal is to create unforgettable memories while promoting conservation and sustainable tourism.</p>
-                    
-                    <h3>Our Team</h3>
-                    <p>Our team consists of experienced guides, wildlife experts, and passionate professionals who have dedicated their lives to understanding and preserving Africa's natural wonders. Each member brings unique expertise and local knowledge to ensure the best possible safari experience.</p>
-                    
-                    <h3>Why Choose Us</h3>
-                    <ul>
-                        <li>Expert local guides with years of experience</li>
-                        <li>Commitment to sustainable tourism</li>
-                        <li>Personalized safari experiences</li>
-                        <li>Small group sizes for better wildlife viewing</li>
-                        <li>Comfortable and well-maintained vehicles</li>
-                        <li>Strong focus on safety and customer satisfaction</li>
-                    </ul>
+            <div class="container">
+                <h1 data-aos="fade-up">Our Story</h1>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <p class="lead">Founded in 2010, we've been crafting unforgettable safari experiences in Kenya for over a decade. What began as a small family operation has grown into a trusted name in Kenyan safari tourism, known for our commitment to excellence and authentic experiences.</p>
+                        <p>Our journey started with a simple mission: to share the breathtaking beauty of Kenya's wildlife and landscapes with visitors from around the world. Today, we continue to fulfill this mission by offering carefully curated safari experiences that showcase the best of Kenya's natural wonders.</p>
+                        <p>From the vast savannas of the Maasai Mara to the rugged terrain of Samburu, we take pride in introducing our guests to Kenya's diverse ecosystems and rich wildlife. Our experienced guides, many of whom are local experts, ensure that every safari is not just a journey, but a transformative experience.</p>
+                        
+                        <div class="about-grid">
+                            <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                                <i class="fas fa-bullseye"></i>
+                                <h3>Our Mission</h3>
+                                <p>We are committed to providing authentic safari experiences that respect wildlife and local communities. Our goal is to create unforgettable memories while promoting conservation and sustainable tourism.</p>
+                            </div>
+                            
+                            <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                                <i class="fas fa-users"></i>
+                                <h3>Our Team</h3>
+                                <p>Our team consists of experienced guides, wildlife experts, and passionate professionals who have dedicated their lives to understanding and preserving Africa's natural wonders.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image" data-aos="fade-left">
+                        <img src="images/IMG-20250613-WA0021.jpg" alt="Our Safari Team">
+                    </div>
                 </div>
-                <div class="about-image">
-                    <img src="images/team.jpg" alt="Our Safari Team">
+            </div>
+        </section>
+
+        <section class="packages">
+            <div class="container">
+                <h2 data-aos="fade-up">Our Safari Packages</h2>
+                <div class="packages-grid">
+                    <div class="package-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="package-image">
+                            <img src="images/IMG-20250613-WA0002.jpg" alt="Classic Safari">
+                        </div>
+                        <div class="package-content">
+                            <h3>Classic Safari</h3>
+                            <p>Experience the best of Tanzania's wildlife in this comprehensive 7-day safari package.</p>
+                            <ul>
+                                <li>7 days / 6 nights</li>
+                                <li>All meals included</li>
+                                <li>Luxury accommodation</li>
+                                <li>Professional guide</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="package-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="package-image">
+                            <img src="images/IMG-20250613-WA0003.jpg" alt="Wildlife Photography">
+                        </div>
+                        <div class="package-content">
+                            <h3>Wildlife Photography</h3>
+                            <p>Perfect for photography enthusiasts, this package includes special access and timing for the best shots.</p>
+                            <ul>
+                                <li>5 days / 4 nights</li>
+                                <li>Photography guide</li>
+                                <li>Special vehicle setup</li>
+                                <li>Editing workshop</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="package-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="package-image">
+                            <img src="images/IMG-20250613-WA0004.jpg" alt="Luxury Experience">
+                        </div>
+                        <div class="package-content">
+                            <h3>Luxury Experience</h3>
+                            <p>Indulge in the ultimate safari experience with premium accommodations and exclusive activities.</p>
+                            <ul>
+                                <li>10 days / 9 nights</li>
+                                <li>Private guide</li>
+                                <li>Luxury lodges</li>
+                                <li>Helicopter transfers</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="values">
-            <h2>Our Values</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Sustainability</h3>
-                    <p>We are committed to eco-friendly practices and minimizing our environmental impact.</p>
-                </div>
-                <div class="value-card">
-                    <i class="fas fa-hands-helping"></i>
-                    <h3>Community</h3>
-                    <p>We support local communities and contribute to their development.</p>
-                </div>
-                <div class="value-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Safety</h3>
-                    <p>Your safety is our top priority in all our safari operations.</p>
-                </div>
-                <div class="value-card">
-                    <i class="fas fa-star"></i>
-                    <h3>Excellence</h3>
-                    <p>We strive for excellence in every aspect of our service.</p>
+            <div class="container">
+                <h2 data-aos="fade-up">Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Sustainability</h3>
+                        <p>We are committed to eco-friendly practices and minimizing our environmental impact.</p>
+                    </div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Community</h3>
+                        <p>We support local communities and contribute to their development.</p>
+                    </div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safety</h3>
+                        <p>Your safety is our top priority in all our safari operations.</p>
+                    </div>
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-star"></i>
+                        <h3>Excellence</h3>
+                        <p>We strive for excellence in every aspect of our service.</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: info@lionclawsafaris.com</p>
-                <p>Phone: +255 123 456 789</p>
-                <p>Address: Arusha, Tanzania</p>
+        <div class="container footer-content">
+            <div>
+                <h3>Lion Claw Safaris</h3>
+                <p>&copy; 2024 Lion Claw Safaris. All rights reserved.</p>
             </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Lion Claw Safaris. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html> 

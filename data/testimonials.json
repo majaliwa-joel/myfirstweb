@@ -1,0 +1,31 @@
+{
+    "testimonials": [
+        {
+            "id": 1,
+            "name": "John Smith",
+            "role": "Adventure Enthusiast",
+            "image": "images/testimonials/testimonial1.jpg",
+            "text": "An unforgettable experience with Lion Claw Safaris. The team's expertise and attention to detail made our safari truly special.",
+            "rating": 5,
+            "date": "2024-03-15"
+        },
+        {
+            "id": 2,
+            "name": "Sarah Johnson",
+            "role": "Wildlife Photographer",
+            "image": "images/testimonials/testimonial2.jpg",
+            "text": "The best safari experience I've ever had. The guides were knowledgeable and the accommodations were luxurious.",
+            "rating": 5,
+            "date": "2024-03-10"
+        },
+        {
+            "id": 3,
+            "name": "Michael Brown",
+            "role": "Travel Blogger",
+            "image": "images/testimonials/testimonial3.jpg",
+            "text": "Lion Claw Safaris exceeded all our expectations. The wildlife sightings were incredible and the service was impeccable.",
+            "rating": 5,
+            "date": "2024-03-05"
+        }
+    ]
+} 
