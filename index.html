@@ -7,12 +7,12 @@
     <meta property="og:title" content="Lion Claw Safaris - Luxury African Safaris">
     <meta property="og:description" content="Experience the magic of Africa with Lion Claw Safaris. Professional guided tours to Maasai Mara and more.">
     <meta property="og:type" content="website">
-    <title>Lion Claw Safaris</title>
+    <title>Lion Claw Safaris - Luxury African Safaris</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
@@ -23,143 +23,238 @@
         </div>
     </div>
 
-    <!-- Header -->
-    <header class="sticky-header">
-        <div class="container nav-container">
-            <div class="logo">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
                 <img src="logo/Screenshot 2025-06-13 164438.png" alt="Lion Claw Safaris Logo">
-                <span>Lion Claw Safaris</span>
-            </div>
-            <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="packages.html">Packages</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="packages.html">Safaris</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
             <button class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+                <i class="fas fa-bars"></i>
             </button>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <!-- Hero Section with Slideshow -->
-        <section class="hero-slideshow">
-            <div class="slideshow-container">
-                <div class="slide active" style="background-image: url('images/IMG-20250613-WA0001.jpg')"></div>
-                <div class="slide" style="background-image: url('images/IMG-20250613-WA0004.jpg')"></div>
-                <div class="slide" style="background-image: url('images/IMG-20250613-WA0027.jpg')"></div>
-            </div>
-            <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <div class="hero-text" data-aos="fade-up">
-                    <h1>Explore Africa with Lion Claw Safaris</h1>
-                    <p class="subtitle">Curated by Alfred Majaliwa</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: url('images/IMG-20250613-WA0001.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="decorative-frame">
+                        <div class="frame-top"></div>
+                        <h1>Africa + Adventure + Luxury</h1>
+                        <div class="frame-bottom"></div>
+                    </div>
+                    <p class="subtitle">Discover the magic of East Africa's wildlife and landscapes</p>
                     <div class="hero-buttons">
-                        <a href="#packages" class="btn btn-primary">Explore Packages</a>
-                        <a href="https://wa.me/254723316654?text=Hello%20Lion%20Claw!%20I'm%20interested%20in%20a%20safari." class="btn btn-whatsapp">
+                        <a href="packages.html" class="btn btn-primary">Explore Packages</a>
+                        <a href="https://wa.me/254733316654?text=Hello%20Lion%20Claw%20Safaris!%20I'm%20interested%20in%20a%20safari." class="btn btn-whatsapp">
                             <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Packages Preview Section -->
-        <section id="packages" class="packages-preview">
-            <div class="container">
-                <div class="marquee-title">
-                    <span>— POPULAR SAFARI PACKAGES —</span>
-                </div>
-                <div class="packages-grid">
-                    <div class="package-card" data-aos="fade-up">
-                        <div class="package-image">
-                            <img src="images/IMG-20250613-WA0001.jpg" alt="Maasai Mara Safari">
-                            <div class="package-price">
-                                <span>From</span>
-                                <h3>$980</h3>
-                            </div>
-                        </div>
-                        <div class="package-content">
-                            <h2>Maasai Mara Escape</h2>
-                            <p class="duration">4 Days / 3 Nights</p>
-                            <a href="packages.html" class="btn btn-secondary">View Details</a>
-                        </div>
+            <div class="slide" style="background-image: url('images/IMG-20250613-WA0002.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="decorative-frame">
+                        <div class="frame-top"></div>
+                        <h1>Rated the Best in East Africa</h1>
+                        <div class="frame-bottom"></div>
                     </div>
-
-                    <div class="package-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="package-image">
-                            <img src="images/IMG-20250613-WA0004.jpg" alt="Amboseli Safari">
-                            <div class="package-price">
-                                <span>From</span>
-                                <h3>$750</h3>
-                            </div>
-                        </div>
-                        <div class="package-content">
-                            <h2>Amboseli Elephant Safari</h2>
-                            <p class="duration">3 Days / 2 Nights</p>
-                            <a href="packages.html" class="btn btn-secondary">View Details</a>
-                        </div>
-                    </div>
-
-                    <div class="package-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="package-image">
-                            <img src="images/IMG-20250613-WA0027.jpg" alt="Great Migration Safari">
-                            <div class="package-price">
-                                <span>From</span>
-                                <h3>$1,450</h3>
-                            </div>
-                        </div>
-                        <div class="package-content">
-                            <h2>Great Migration Special</h2>
-                            <p class="duration">6 Days / 5 Nights</p>
-                            <a href="packages.html" class="btn btn-secondary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- WhatsApp Chat Button -->
-    <a href="https://wa.me/254723316654" class="whatsapp-btn" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-info">
-                <h3>Lion Claw Safaris</h3>
-                <p>Experience the magic of Africa with us</p>
-                <div class="contact-info">
-                    <p><i class="fas fa-phone"></i> 0723316654</p>
-                    <div class="social-links">
-                        <a href="https://instagram.com/lionclawsafaris" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://facebook.com/lionclawsafaris" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
+                    <p class="subtitle">Tailored luxury tours offering the best of the wild</p>
+                    <div class="hero-buttons">
+                        <a href="packages.html" class="btn btn-primary">Explore Packages</a>
+                        <a href="https://wa.me/254733316654?text=Hello%20Lion%20Claw%20Safaris!%20I'm%20interested%20in%20a%20safari." class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="packages.html">Packages</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+            <div class="slide" style="background-image: url('images/IMG-20250613-WA0003.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="decorative-frame">
+                        <div class="frame-top"></div>
+                        <h1>Where Wilderness Meets Elegance</h1>
+                        <div class="frame-bottom"></div>
+                    </div>
+                    <p class="subtitle">Experience the perfect blend of adventure and luxury</p>
+                    <div class="hero-buttons">
+                        <a href="packages.html" class="btn btn-primary">Explore Packages</a>
+                        <a href="https://wa.me/254733316654?text=Hello%20Lion%20Claw%20Safaris!%20I'm%20interested%20in%20a%20safari." class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/IMG-20250613-WA0004.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="decorative-frame">
+                        <div class="frame-top"></div>
+                        <h1>Your Dream Safari Starts Here</h1>
+                        <div class="frame-bottom"></div>
+                    </div>
+                    <p class="subtitle">Creating unforgettable memories in the heart of Africa</p>
+                    <div class="hero-buttons">
+                        <a href="packages.html" class="btn btn-primary">Explore Packages</a>
+                        <a href="https://wa.me/254733316654?text=Hello%20Lion%20Claw%20Safaris!%20I'm%20interested%20in%20a%20safari." class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Lion Claw Safaris. All rights reserved.</p>
+        <div class="slide-nav">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-route"></i>
+                    <h3>Custom Safari Routes</h3>
+                    <p>Tailored itineraries designed to match your preferences and create unforgettable memories.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Expert Local Guides</h3>
+                    <p>Knowledgeable guides with years of experience in East Africa's diverse ecosystems.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-campground"></i>
+                    <h3>Luxury Tented Camps</h3>
+                    <p>Experience the perfect blend of comfort and adventure in our premium accommodations.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>All-Inclusive Travel Planning</h3>
+                    <p>Comprehensive packages covering every detail of your safari journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safari Experiences Section -->
+    <section class="safari-experiences">
+        <div class="container">
+            <h2>Safari Experiences</h2>
+            <div class="experiences-grid">
+                <div class="experience-card">
+                    <i class="fas fa-paw"></i>
+                    <h3>Big Five Game Drives</h3>
+                    <p>Encounter Africa's most iconic wildlife in their natural habitat.</p>
+                </div>
+                <div class="experience-card">
+                    <i class="fas fa-dove"></i>
+                    <h3>Birdwatching Adventures</h3>
+                    <p>Discover East Africa's rich avian diversity with expert ornithologists.</p>
+                </div>
+                <div class="experience-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Cultural Village Visits</h3>
+                    <p>Immerse yourself in the vibrant traditions of local communities.</p>
+                </div>
+                <div class="experience-card">
+                    <i class="fas fa-hot-air-balloon"></i>
+                    <h3>Scenic Balloon Safaris</h3>
+                    <p>Soar above the savanna for breathtaking aerial views of wildlife.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Lion Claw Safaris</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Handcrafted Itineraries</h3>
+                    <p>Personalized safari experiences tailored to your preferences and interests.</p>
+                </div>
+                <div class="reason-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Affordable Luxury</h3>
+                    <p>Premium safari experiences at competitive prices across East Africa.</p>
+                </div>
+                <div class="reason-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Eco-Conscious</h3>
+                    <p>Committed to sustainable tourism and community development.</p>
+                </div>
+                <div class="reason-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Expert Experience</h3>
+                    <p>Decades of combined field experience in African safari operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="instagram-feed">
+        <div class="container">
+            <h2>The Latest from Instagram</h2>
+            <div class="instagram-grid" id="instagramFeed">
+                <!-- Instagram posts will be loaded here dynamically -->
+                <div class="instagram-loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading Instagram posts...</p>
+                </div>
+            </div>
+            <div class="instagram-cta">
+                <a href="https://www.instagram.com/lionclawsafaris" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-instagram"></i> Follow Us on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img src="logo/Screenshot 2025-06-13 164438.png" alt="Lion Claw Safaris Logo" class="footer-logo">
+                    <p>Creating unforgettable safari experiences in East Africa since 2010.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/lionclawsafaris" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lionclawsafaris" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/254733316654?text=Hello%20Lion%20Claw%20Safaris!%20I'm%20interested%20in%20a%20safari." target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="packages.html">Safaris</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <a href="tel:+254723316654"><i class="fas fa-phone"></i> +254 723 316 654</a>
+                    <a href="mailto:info@lionclawsafaris.com"><i class="fas fa-envelope"></i> info@lionclawsafaris.com</a>
+                    <a href="https://wa.me/254733316654?text=Hello%20Lion%20Claw%20Safaris!%20I'm%20interested%20in%20a%20safari."><i class="fab fa-whatsapp"></i> +254 733 316 654</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lion Claw Safaris. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 

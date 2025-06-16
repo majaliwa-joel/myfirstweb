@@ -42,141 +42,218 @@
     <main>
         <section class="packages-hero">
             <div class="container">
-                <h1 data-aos="fade-up">Our Safari Packages</h1>
-                <p data-aos="fade-up" data-aos-delay="100">Discover our carefully curated safari experiences in Kenya's most spectacular locations</p>
+                <h1 data-aos="fade-up">Our Safari Experiences</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Discover the magic of Africa through our carefully curated safari adventures</p>
             </div>
         </section>
 
-        <section class="packages-grid">
+        <section class="safari-showcase">
             <div class="container">
-                <div class="package-cards">
-                    <!-- Maasai Mara Package -->
-                    <div class="package-card" data-aos="fade-up">
-                        <div class="package-image">
-                            <img src="images/IMG-20250613-WA0001.jpg" alt="Maasai Mara Safari">
-                            <div class="package-price">
-                                <span>From</span>
-                                <h3>$2,500</h3>
-                                <span>per person</span>
+                <div class="safari-grid">
+                    <!-- Maasai Mara Explorer -->
+                    <div class="safari-card" data-aos="fade-up">
+                        <div class="safari-image">
+                            <img src="images/IMG-20250613-WA0002.jpg" alt="Maasai Mara Explorer">
+                            <div class="safari-overlay">
+                                <div class="safari-price">
+                                    <span>From</span>
+                                    <h3>$1,200</h3>
+                                    <span>per person</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="package-content">
+                        <div class="safari-content">
                             <h2>Maasai Mara Explorer</h2>
-                            <div class="package-details">
+                            <div class="safari-highlights">
                                 <span><i class="fas fa-clock"></i> 5 Days / 4 Nights</span>
                                 <span><i class="fas fa-users"></i> Max 6 People</span>
                                 <span><i class="fas fa-calendar"></i> Year Round</span>
+                                <span class="review-count" style="display: none;"><i class="fas fa-star"></i> <span class="count">0</span> Reviews</span>
                             </div>
                             <p>Experience the world-famous Maasai Mara, home to the Great Migration and abundant wildlife. Stay in luxury lodges and enjoy daily game drives.</p>
-                            <ul class="package-features">
-                                <li><i class="fas fa-check"></i> Daily Game Drives</li>
-                                <li><i class="fas fa-check"></i> Luxury Lodge Accommodation</li>
-                                <li><i class="fas fa-check"></i> Maasai Village Visit</li>
-                                <li><i class="fas fa-check"></i> Professional Guide</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                            <div class="safari-features">
+                                <div class="feature">
+                                    <i class="fas fa-car"></i>
+                                    <span>Daily Game Drives</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-bed"></i>
+                                    <span>Luxury Lodge</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-home"></i>
+                                    <span>Maasai Village</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-user-tie"></i>
+                                    <span>Expert Guide</span>
+                                </div>
+                            </div>
+                            <div class="safari-actions">
+                                <a href="contact.html" class="btn btn-primary">Book Now</a>
+                                <button class="btn btn-outline details-btn">View Details</button>
+                            </div>
+                            <div class="reviews-section">
+                                <h3>Customer Reviews</h3>
+                                <div class="reviews-list">
+                                    <!-- Reviews will be dynamically loaded here -->
+                                </div>
+                                <div class="review-form">
+                                    <h4>Leave a Review</h4>
+                                    <div class="star-rating">
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <label for="star5" title="5 stars">★</label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4" title="4 stars">★</label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3" title="3 stars">★</label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2" title="2 stars">★</label>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1" title="1 star">★</label>
+                                    </div>
+                                    <textarea placeholder="Write your review here..."></textarea>
+                                    <button class="btn">Submit Review</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Amboseli Package -->
-                    <div class="package-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="package-image">
-                            <img src="images/IMG-20250613-WA0004.jpg" alt="Amboseli Safari">
-                            <div class="package-price">
-                                <span>From</span>
-                                <h3>$1,800</h3>
-                                <span>per person</span>
+                    <!-- Serengeti Adventure -->
+                    <div class="safari-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="safari-image">
+                            <img src="images/IMG-20250613-WA0003.jpg" alt="Serengeti Adventure">
+                            <div class="safari-overlay">
+                                <div class="safari-price">
+                                    <span>From</span>
+                                    <h3>$1,500</h3>
+                                    <span>per person</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="package-content">
-                            <h2>Amboseli Adventure</h2>
-                            <div class="package-details">
+                        <div class="safari-content">
+                            <h2>Serengeti Adventure</h2>
+                            <div class="safari-highlights">
+                                <span><i class="fas fa-clock"></i> 7 Days / 6 Nights</span>
+                                <span><i class="fas fa-users"></i> Max 8 People</span>
+                                <span><i class="fas fa-calendar"></i> June - October</span>
+                                <span class="review-count" style="display: none;"><i class="fas fa-star"></i> <span class="count">0</span> Reviews</span>
+                            </div>
+                            <p>Journey through the vast Serengeti plains, witness the Great Migration, and experience the raw beauty of Tanzania's most famous national park.</p>
+                            <div class="safari-features">
+                                <div class="feature">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Photo Safari</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-hiking"></i>
+                                    <span>Walking Safari</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-moon"></i>
+                                    <span>Night Drives</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Bush Dinners</span>
+                                </div>
+                            </div>
+                            <div class="safari-actions">
+                                <a href="contact.html" class="btn btn-primary">Book Now</a>
+                                <button class="btn btn-outline details-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ngorongoro Crater -->
+                    <div class="safari-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="safari-image">
+                            <img src="images/IMG-20250613-WA0004.jpg" alt="Ngorongoro Crater">
+                            <div class="safari-overlay">
+                                <div class="safari-price">
+                                    <span>From</span>
+                                    <h3>$900</h3>
+                                    <span>per person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="safari-content">
+                            <h2>Ngorongoro Crater</h2>
+                            <div class="safari-highlights">
                                 <span><i class="fas fa-clock"></i> 4 Days / 3 Nights</span>
                                 <span><i class="fas fa-users"></i> Max 6 People</span>
                                 <span><i class="fas fa-calendar"></i> Year Round</span>
+                                <span class="review-count" style="display: none;"><i class="fas fa-star"></i> <span class="count">0</span> Reviews</span>
                             </div>
-                            <p>Witness the majestic Mount Kilimanjaro while observing large herds of elephants in their natural habitat. Perfect for photography enthusiasts.</p>
-                            <ul class="package-features">
-                                <li><i class="fas fa-check"></i> Elephant Viewing</li>
-                                <li><i class="fas fa-check"></i> Kilimanjaro Views</li>
-                                <li><i class="fas fa-check"></i> Luxury Tented Camp</li>
-                                <li><i class="fas fa-check"></i> Bird Watching</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary">Book Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Samburu Package -->
-                    <div class="package-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="package-image">
-                            <img src="images/IMG-20250613-WA0005.jpg" alt="Samburu Safari">
-                            <div class="package-price">
-                                <span>From</span>
-                                <h3>$2,200</h3>
-                                <span>per person</span>
+                            <p>Descend into the world's largest intact volcanic caldera, home to an incredible density of wildlife and stunning landscapes.</p>
+                            <div class="safari-features">
+                                <div class="feature">
+                                    <i class="fas fa-mountain"></i>
+                                    <span>Crater Floor</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Wildlife Viewing</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-water"></i>
+                                    <span>Lake Manyara</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-hotel"></i>
+                                    <span>Lodge Stay</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="package-content">
-                            <h2>Samburu Special</h2>
-                            <div class="package-details">
-                                <span><i class="fas fa-clock"></i> 6 Days / 5 Nights</span>
-                                <span><i class="fas fa-users"></i> Max 6 People</span>
-                                <span><i class="fas fa-calendar"></i> Year Round</span>
+                            <div class="safari-actions">
+                                <a href="contact.html" class="btn btn-primary">Book Now</a>
+                                <button class="btn btn-outline details-btn">View Details</button>
                             </div>
-                            <p>Explore the rugged beauty of Samburu, home to unique wildlife species and stunning landscapes. Experience authentic cultural encounters.</p>
-                            <ul class="package-features">
-                                <li><i class="fas fa-check"></i> Special Five Wildlife</li>
-                                <li><i class="fas fa-check"></i> Cultural Experiences</li>
-                                <li><i class="fas fa-check"></i> Luxury Lodge Stay</li>
-                                <li><i class="fas fa-check"></i> River Safari</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary">Book Now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="package-includes">
-            <div class="container">
-                <h2 data-aos="fade-up">What's Included</h2>
-                <div class="includes-grid">
-                    <div class="include-item" data-aos="fade-up">
-                        <i class="fas fa-car"></i>
-                        <h3>Transportation</h3>
-                        <p>Comfortable 4x4 safari vehicles with professional drivers</p>
-                    </div>
-                    <div class="include-item" data-aos="fade-up" data-aos-delay="100">
-                        <i class="fas fa-utensils"></i>
-                        <h3>Meals</h3>
-                        <p>All meals included, featuring local and international cuisine</p>
-                    </div>
-                    <div class="include-item" data-aos="fade-up" data-aos-delay="200">
-                        <i class="fas fa-bed"></i>
-                        <h3>Accommodation</h3>
-                        <p>Luxury lodges and tented camps with modern amenities</p>
-                    </div>
-                    <div class="include-item" data-aos="fade-up" data-aos-delay="300">
-                        <i class="fas fa-user-tie"></i>
-                        <h3>Expert Guide</h3>
-                        <p>Professional safari guides with extensive knowledge</p>
-                    </div>
+        <!-- Safari Details Modal -->
+        <div class="safari-modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="modal-body">
+                    <!-- Content will be dynamically loaded -->
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div>
-                <h3>Lion Claw Safaris</h3>
-                <p>&copy; 2024 Lion Claw Safaris. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img src="logo/Screenshot 2025-06-13 164438.png" alt="Lion Claw Safaris Logo" class="footer-logo">
+                    <p>Creating unforgettable safari experiences in East Africa since 2010.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/lionclawsafaris" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lionclawsafaris" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/254733316654?text=Hello%20Lion%20Claw%20Safaris!%20I'm%20interested%20in%20a%20safari." target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="packages.html">Safaris</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <a href="tel:+254723316654"><i class="fas fa-phone"></i> +254 723 316 654</a>
+                    <a href="mailto:info@lionclawsafaris.com"><i class="fas fa-envelope"></i> info@lionclawsafaris.com</a>
+                    <a href="https://wa.me/254733316654?text=Hello%20Lion%20Claw%20Safaris!%20I'm%20interested%20in%20a%20safari."><i class="fab fa-whatsapp"></i> +254 733 316 654</a>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="about.html">About</a>
-                <a href="packages.html">Packages</a>
-                <a href="contact.html">Contact</a>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lion Claw Safaris. All rights reserved.</p>
             </div>
         </div>
     </footer>

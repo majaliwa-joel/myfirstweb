@@ -3,122 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Lion Claw Safaris</title>
+    <title>Contact Us - Lion Claw Safaris</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <header>
-        <div class="container nav-container">
-            <div class="logo">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
                 <img src="logo/Screenshot 2025-06-13 164438.png" alt="Lion Claw Safaris Logo">
-                <span>Lion Claw Safaris</span>
-            </div>
-            <nav>
+            </a>
+            <div class="nav-links">
                 <a href="index.html">Home</a>
+                <a href="packages.html">Safaris</a>
                 <a href="about.html">About</a>
                 <a href="contact.html" class="active">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="contact-hero">
-            <div class="container">
-                <h1 data-aos="fade-up">Get in Touch</h1>
-                <p class="lead" data-aos="fade-up" data-aos-delay="100">We'd love to hear from you. Let's plan your perfect safari adventure together.</p>
             </div>
-        </section>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-        <section class="contact-main">
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-info" data-aos="fade-right">
-                        <div class="info-card">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h3>Our Location</h3>
-                            <p>Villa Franka Estate, Nairobi, Kenya</p>
-                        </div>
-                        <div class="info-card">
-                            <i class="fas fa-phone-alt"></i>
-                            <h3>Phone Number</h3>
-                            <p>+254 733 316 654</p>
-                        </div>
-                        <div class="info-card">
-                            <i class="fas fa-envelope"></i>
-                            <h3>Email Address</h3>
-                            <p>info@lionclawsafaris.com</p>
-                        </div>
-                        <div class="social-section">
-                            <h3>Connect With Us</h3>
-                            <div class="social-links">
-                                <a href="https://www.instagram.com/lionclawsafaris" target="_blank" class="social-btn instagram">
-                                    <i class="fab fa-instagram"></i>
-                                    <span>@lionclawsafaris</span>
-                                </a>
-                                <a href="https://wa.me/254733316654" target="_blank" class="social-btn whatsapp">
-                                    <i class="fab fa-whatsapp"></i>
-                                    <span>WhatsApp</span>
-                                </a>
-                                <a href="https://www.facebook.com/lionclawsafaris" target="_blank" class="social-btn facebook">
-                                    <i class="fab fa-facebook"></i>
-                                    <span>Facebook</span>
-                                </a>
-                            </div>
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h1>Get in Touch</h1>
+            <p>We're here to help plan your perfect safari adventure</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <a href="tel:+254723316654">+254 723 316 654</a>
                         </div>
                     </div>
-
-                    <div class="contact-form-wrapper" data-aos="fade-left">
-                        <form class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Your Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
+                    <div class="info-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/254733316654?text=Hello%20Lion%20Claw%20Safaris!%20I'm%20interested%20in%20a%20safari.">+254 733 316 654</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <a href="mailto:info@lionclawsafaris.com">info@lionclawsafaris.com</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                            <p>Saturday: 9:00 AM - 4:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <footer>
-        <div class="container footer-content">
-            <div>
-                <h3>Lion Claw Safaris</h3>
-                <p>&copy; 2024 Lion Claw Safaris. All rights reserved.</p>
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="about.html">About</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8191673767!2d36.82115931475884!3d-1.2821999990610927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d5a0c5c0c1%3A0x1c0c0c0c0c0c0c0c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1623600000000!5m2!1sen!2ske" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img src="logo/Screenshot 2025-06-13 164438.png" alt="Lion Claw Safaris Logo" class="footer-logo">
+                    <p>Creating unforgettable safari experiences in East Africa since 2010.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/lionclawsafaris" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lionclawsafaris" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/254733316654?text=Hello%20Lion%20Claw%20Safaris!%20I'm%20interested%20in%20a%20safari." target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="packages.html">Safaris</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <a href="tel:+254723316654"><i class="fas fa-phone"></i> +254 723 316 654</a>
+                    <a href="mailto:info@lionclawsafaris.com"><i class="fas fa-envelope"></i> info@lionclawsafaris.com</a>
+                    <a href="https://wa.me/254733316654?text=Hello%20Lion%20Claw%20Safaris!%20I'm%20interested%20in%20a%20safari."><i class="fab fa-whatsapp"></i> +254 733 316 654</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lion Claw Safaris. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
     <script src="js/script.js"></script>
 </body>
 </html> 
